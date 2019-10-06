@@ -46,7 +46,7 @@ public class ExampleBot extends TelegramLongPollingBot {
 			Long chatId = message.getChatId();
 			response.setChatId(chatId);
 			String text = message.getText();
-			response.setText(text);
+			response.setText("Ух ты! Прикольно!");
 			try {
 				execute(response);
 				logger.info("Sent message \"{}\" to {}", text, chatId);
